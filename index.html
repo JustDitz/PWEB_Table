@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabel Nilai Siswa</title>
+    <style>
+        /* CSS Nilai Siswa */
+        body {
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            padding: 20px;
+        }
+
+        table {
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            border: 1px solid #333;
+            padding: 8px 12px;
+            text-align: center;
+        }
+
+        /* CSS Form Login */
+        td:first-child {
+            text-align: left;
+        }
+
+        thead tr:first-child th {
+            background-color: #1a5276;
+            color: #ffffff;
+        }
+
+        thead tr:last-child th {
+            background-color: #2e86c1;
+            color: #ffffff;
+        }
+
+        /* Pewarnaan Baris Tabel Ganjil Genap */
+        tbody tr:nth-child(odd) {
+            background-color: #d6eaf8;
+        }
+
+        tbody tr:nth-child(even) {
+            background-color: #ffffff;
+        }
+
+        fieldset {
+            border: 1px solid #999;
+            padding: 15px 20px;
+            width: 280px;
+            margin-top: 30px;
+        }
+
+        legend {
+            font-weight: bold;
+            font-size: 14px;
+            padding: 0 5px;
+        }
+
+        .form-row {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .form-row label {
+            width: 80px;
+        }
+
+        .form-row input {
+            width: 160px;
+            padding: 3px 5px;
+            border: 1px solid #aaa;
+        }
+
+        .form-check {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            margin-bottom: 12px;
+        }
+
+        .btn-login {
+            padding: 4px 16px;
+            background-color: #f0f0f0;
+            border: 1px solid #aaa;
+            cursor: pointer;
+            border-radius: 2px;
+        }
+    </style>
+</head>
+
+<!-- Tabel Nilai Siswa -->
+
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th rowspan="2">Nama</th>
+                <th rowspan="2">Kelas</th>
+                <th colspan="6">Nilai</th>
+            </tr>
+            <tr>
+                <th>Kimia</th>
+                <th>Fisika</th>
+                <th>Biologi</th>
+                <th>Matematika</th>
+                <th>Sejarah</th>
+                <th>Informatika</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Andi</td>
+                <td>XII IPA 1</td>
+                <td>85</td>
+                <td>78</td>
+                <td>90</td>
+                <td>88</td>
+                <td>76</td>
+                <td>92</td>
+            </tr>
+            <tr>
+                <td>Budi</td>
+                <td>XII IPA 1</td>
+                <td>70</td>
+                <td>65</td>
+                <td>80</td>
+                <td>72</td>
+                <td>88</td>
+                <td>79</td>
+            </tr>
+            <tr>
+                <td>Citra</td>
+                <td>XII IPA 2</td>
+                <td>92</td>
+                <td>88</td>
+                <td>95</td>
+                <td>91</td>
+                <td>85</td>
+                <td>96</td>
+            </tr>
+            <tr>
+                <td>Dina</td>
+                <td>XII IPA 2</td>
+                <td>77</td>
+                <td>80</td>
+                <td>74</td>
+                <td>83</td>
+                <td>90</td>
+                <td>85</td>
+            </tr>
+            <tr>
+                <td>Eko</td>
+                <td>XII IPA 3</td>
+                <td>88</td>
+                <td>91</td>
+                <td>86</td>
+                <td>79</td>
+                <td>82</td>
+                <td>88</td>
+            </tr>
+            <tr>
+                <td>Fajar</td>
+                <td>XII IPA 3</td>
+                <td>95</td>
+                <td>84</td>
+                <td>89</td>
+                <td>93</td>
+                <td>78</td>
+                <td>97</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- Form Login -->
+    <fieldset>
+        <legend>Login</legend>
+
+        <div class="form-row">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" value="">
+        </div>
+
+        <div class="form-row">
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" value="">
+        </div>
+
+        <div class="form-check">
+            <input type="checkbox" id="remember" name="remember">
+            <label for="remember">Remember me</label>
+        </div>
+
+        <button type="button" class="btn-login">Login</button>
+    </fieldset>
+
+</body>
+
+</html>
